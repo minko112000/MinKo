@@ -205,6 +205,7 @@ main {
   z-index: 11;
   transition: all .5s;
   transform: translateX(110%);
+  overflow-y: scroll;
 }
 
 #home-page {
@@ -274,7 +275,7 @@ main {
 }
 
 .img-box img {
-  width: 90%;
+  width: 300px;
 }
 
 .circle-gp {
@@ -376,9 +377,10 @@ main {
 }
 
 .box {
-  height: 30%;
+  height: 280px;
   width: 90%;
   padding: 6px;
+  margin-top: 6px;
   position: relative;
   background: linear-gradient(to right, #313539 50px, #212529);
   border-radius: 4px;
@@ -418,12 +420,12 @@ main {
 
 .pj-box {
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .pj-box img {
-  width: 40%;
-  height: 100%;
+  width: 120px;
 }
 
 .pj-box .des-box {
@@ -468,10 +470,13 @@ main {
 .contact-container > div {
   width: 90%;
   height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-container .l img {
-  width: 100%;
+  width: 200px;
   border-radius: 3px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
               -2px -2px 3px rgba(0, 0, 0, 0.1);
@@ -622,16 +627,24 @@ main {
   }
   
   .box {
-    width: 32%;
-    height: 90%;
+    height: 320px;
+    width: 90%;
   }
   
   .box h2 {
     font-size: 1.5em;
   }
   
+  .pj-box img {
+    width: 300px;
+  }
+  
   .contact-container > div {
     width: 50%;
     height: 90%;
+  }
+  
+  .contact-container .l img {
+    width: 300px;
   }
 }
